@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { AreaChart, Bar, BarChart, ChartBar, FileSearch, Home, List, LogOut, Package, PieChart, Plus, Search, Settings, User } from 'lucide-react';
+import { AreaChart, BarChart, ChartBar, FileSearch, Home, List, LogOut, Package, PieChart, Plus, Search, Settings, User } from 'lucide-react';
 import { Bell } from 'lucide-react';
 
 const ClientReports = () => {
@@ -144,7 +144,7 @@ const ClientReports = () => {
               <CardContent>
                 <div className="h-64 flex items-center justify-center">
                   <div className="text-center">
-                    <Bar className="h-12 w-12 text-morocco-red mx-auto mb-4" />
+                    <BarChart className="h-12 w-12 text-morocco-red mx-auto mb-4" />
                     <ul className="space-y-2 text-sm text-left">
                       <li className="flex justify-between"><span>Consultation</span><span className="font-medium">45 unités</span></li>
                       <li className="flex justify-between"><span>Développement</span><span className="font-medium">32 unités</span></li>
