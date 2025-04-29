@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 
@@ -27,11 +28,11 @@ const Navbar = () => {
           <a href="#contact" className="text-gray-700 hover:text-morocco-red transition-colors duration-300">
             Contact
           </a>
-          <Button variant="outline" className="border-morocco-red text-morocco-red hover:bg-morocco-red hover:text-white">
-            Connexion
+          <Button variant="outline" className="border-morocco-red text-morocco-red hover:bg-morocco-red hover:text-white" asChild>
+            <Link to="/login">Connexion</Link>
           </Button>
-          <Button className="bg-morocco-green hover:bg-morocco-green/90 text-white">
-            S'inscrire
+          <Button className="bg-morocco-green hover:bg-morocco-green/90 text-white" asChild>
+            <Link to="/register">S'inscrire</Link>
           </Button>
         </div>
 
@@ -57,11 +58,11 @@ const Navbar = () => {
               Contact
             </a>
             <div className="flex flex-col space-y-2 pt-2">
-              <Button variant="outline" className="border-morocco-red text-morocco-red w-full">
-                Connexion
+              <Button variant="outline" className="border-morocco-red text-morocco-red w-full" asChild>
+                <Link to="/login">Connexion</Link>
               </Button>
-              <Button className="bg-morocco-green hover:bg-morocco-green/90 text-white w-full">
-                S'inscrire
+              <Button className="bg-morocco-green hover:bg-morocco-green/90 text-white w-full" asChild>
+                <Link to="/register">S'inscrire</Link>
               </Button>
             </div>
           </div>
